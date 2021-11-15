@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from recycleportalbe.CRUD.views import ContractFormViewSet
+from CRUD.views import ContractFormViewSet
 
 router = routers.DefaultRouter()
-router.register(r'recycleportalbe.CRUD', ContractFormViewSet)
+router.register(r'saveForm', ContractFormViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
